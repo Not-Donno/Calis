@@ -1,0 +1,43 @@
+import type { FoodItem } from '@/types';
+
+/** Values are approximate nutrition per listed serving and are intentionally bundled for offline use. */
+export const FOOD_DATABASE: FoodItem[] = [
+  { id: 'rice-white-cooked', name: 'White rice, cooked', localName: 'भात', category: 'Grains', servingLabel: '1 cup', servingGrams: 158, calories: 205, protein: 4.3, carbs: 44.5, fat: 0.4, fiber: 0.6 },
+  { id: 'rice-brown-cooked', name: 'Brown rice, cooked', localName: 'भात', category: 'Grains', servingLabel: '1 cup', servingGrams: 195, calories: 216, protein: 5, carbs: 44.8, fat: 1.8, fiber: 3.5 },
+  { id: 'dal-cooked', name: 'Lentil dal, cooked', localName: 'दाल', category: 'Legumes', servingLabel: '1 cup', servingGrams: 198, calories: 230, protein: 15, carbs: 40, fat: 1.2, fiber: 15 },
+  { id: 'chickpeas-cooked', name: 'Chickpeas, cooked', category: 'Legumes', servingLabel: '1 cup', servingGrams: 164, calories: 269, protein: 14.5, carbs: 45, fat: 4.2, fiber: 12.5 },
+  { id: 'lentils-cooked', name: 'Lentils, cooked', category: 'Legumes', servingLabel: '1 cup', servingGrams: 198, calories: 230, protein: 18, carbs: 40, fat: 0.8, fiber: 15.8 },
+  { id: 'roti', name: 'Whole wheat roti', localName: 'रोटी', category: 'Grains', servingLabel: '1 roti', servingGrams: 45, calories: 120, protein: 4, carbs: 22, fat: 1.5, fiber: 3 },
+  { id: 'naan', name: 'Naan', localName: 'नान', category: 'Grains', servingLabel: '1 naan', servingGrams: 90, calories: 290, protein: 8, carbs: 50, fat: 7, fiber: 2 },
+  { id: 'egg', name: 'Whole egg', localName: 'अण्डा', category: 'Protein', servingLabel: '1 large egg', servingGrams: 50, calories: 72, protein: 6.3, carbs: 0.4, fat: 4.8, fiber: 0 },
+  { id: 'egg-whites', name: 'Egg whites', category: 'Protein', servingLabel: '3 large whites', servingGrams: 102, calories: 51, protein: 11.4, carbs: 0.7, fat: 0.1, fiber: 0 },
+  { id: 'milk', name: 'Whole milk', category: 'Dairy', servingLabel: '1 cup', servingGrams: 244, calories: 149, protein: 7.7, carbs: 11.7, fat: 7.9, fiber: 0 },
+  { id: 'yogurt', name: 'Plain yogurt', localName: 'दही', category: 'Dairy', servingLabel: '1 cup', servingGrams: 245, calories: 145, protein: 13, carbs: 8.5, fat: 4.3, fiber: 0 },
+  { id: 'paneer', name: 'Paneer', localName: 'पनिर', category: 'Dairy', servingLabel: '100 g', servingGrams: 100, calories: 265, protein: 18, carbs: 3.6, fat: 20, fiber: 0 },
+  { id: 'chicken-breast', name: 'Chicken breast, cooked', category: 'Protein', servingLabel: '100 g', servingGrams: 100, calories: 165, protein: 31, carbs: 0, fat: 3.6, fiber: 0 },
+  { id: 'chicken-curry', name: 'Chicken curry', localName: 'कुकुरकोसा', category: 'Protein', servingLabel: '1 cup', servingGrams: 220, calories: 320, protein: 24, carbs: 12, fat: 18, fiber: 2 },
+  { id: 'fish', name: 'Fish, cooked', category: 'Protein', servingLabel: '100 g', servingGrams: 100, calories: 150, protein: 25, carbs: 0, fat: 5, fiber: 0 },
+  { id: 'tofu', name: 'Firm tofu', category: 'Protein', servingLabel: '100 g', servingGrams: 100, calories: 144, protein: 17, carbs: 2.8, fat: 8.7, fiber: 2.3 },
+  { id: 'soy-milk', name: 'Unsweetened soy milk', category: 'Dairy alternatives', servingLabel: '1 cup', servingGrams: 240, calories: 80, protein: 7, carbs: 4, fat: 4, fiber: 1 },
+  { id: 'broccoli', name: 'Broccoli, cooked', category: 'Vegetables', servingLabel: '1 cup', servingGrams: 156, calories: 55, protein: 3.7, carbs: 11.2, fat: 0.6, fiber: 5.1 },
+  { id: 'spinach', name: 'Spinach, cooked', category: 'Vegetables', servingLabel: '1 cup', servingGrams: 180, calories: 41, protein: 3.6, carbs: 7, fat: 0.5, fiber: 2.9 },
+  { id: 'mixed-vegetables', name: 'Mixed vegetables, cooked', category: 'Vegetables', servingLabel: '1 cup', servingGrams: 160, calories: 80, protein: 3, carbs: 15, fat: 1.5, fiber: 5 },
+  { id: 'carrot', name: 'Carrot', category: 'Vegetables', servingLabel: '1 medium', servingGrams: 61, calories: 25, protein: 0.6, carbs: 6, fat: 0.1, fiber: 1.7 },
+  { id: 'potato', name: 'Boiled potato', localName: 'आलु', category: 'Vegetables', servingLabel: '1 medium', servingGrams: 173, calories: 161, protein: 4.3, carbs: 37, fat: 0.2, fiber: 3.8 },
+  { id: 'banana', name: 'Banana', localName: 'केरा', category: 'Fruits', servingLabel: '1 medium', servingGrams: 118, calories: 105, protein: 1.3, carbs: 27, fat: 0.4, fiber: 3.1 },
+  { id: 'apple', name: 'Apple', category: 'Fruits', servingLabel: '1 medium', servingGrams: 182, calories: 95, protein: 0.5, carbs: 25, fat: 0.3, fiber: 4.4 },
+  { id: 'orange', name: 'Orange', category: 'Fruits', servingLabel: '1 medium', servingGrams: 131, calories: 62, protein: 1.2, carbs: 15.4, fat: 0.2, fiber: 3.1 },
+  { id: 'mango', name: 'Mango', localName: 'आँप', category: 'Fruits', servingLabel: '1 cup', servingGrams: 165, calories: 99, protein: 1.4, carbs: 25, fat: 0.6, fiber: 2.6 },
+  { id: 'peanut-butter', name: 'Peanut butter', category: 'Nuts & seeds', servingLabel: '1 tbsp', servingGrams: 16, calories: 95, protein: 4, carbs: 3.5, fat: 8, fiber: 1 },
+  { id: 'almonds', name: 'Almonds', category: 'Nuts & seeds', servingLabel: '28 g', servingGrams: 28, calories: 164, protein: 6, carbs: 6, fat: 14, fiber: 3.5 },
+  { id: 'walnuts', name: 'Walnuts', category: 'Nuts & seeds', servingLabel: '28 g', servingGrams: 28, calories: 185, protein: 4.3, carbs: 3.9, fat: 18.5, fiber: 2 },
+  { id: 'olive-oil', name: 'Olive oil', category: 'Fats', servingLabel: '1 tbsp', servingGrams: 14, calories: 119, protein: 0, carbs: 0, fat: 13.5, fiber: 0 },
+  { id: 'honey', name: 'Honey', localName: 'मह', category: 'Fats', servingLabel: '1 tbsp', servingGrams: 21, calories: 64, protein: 0, carbs: 17.3, fat: 0, fiber: 0 },
+  { id: 'black-beans', name: 'Black beans, cooked', category: 'Legumes', servingLabel: '1 cup', servingGrams: 172, calories: 227, protein: 15.2, carbs: 41, fat: 0.9, fiber: 15 },
+  { id: 'quinoa', name: 'Quinoa, cooked', category: 'Grains', servingLabel: '1 cup', servingGrams: 185, calories: 222, protein: 8.1, carbs: 39.4, fat: 3.6, fiber: 5.2 },
+  { id: 'oats', name: 'Rolled oats, dry', category: 'Grains', servingLabel: '50 g', servingGrams: 50, calories: 190, protein: 6.5, carbs: 33, fat: 3.5, fiber: 5 },
+  { id: 'whey', name: 'Whey protein', category: 'Protein', servingLabel: '1 scoop', servingGrams: 30, calories: 120, protein: 24, carbs: 3, fat: 2, fiber: 1 },
+  { id: 'dark-chocolate', name: 'Dark chocolate, 70%', category: 'Snacks', servingLabel: '20 g', servingGrams: 20, calories: 120, protein: 2, carbs: 8, fat: 9, fiber: 2 },
+];
+
+export const FOOD_BY_ID = Object.fromEntries(FOOD_DATABASE.map((food) => [food.id, food])) as Record<string, FoodItem>;

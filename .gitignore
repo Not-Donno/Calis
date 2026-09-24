@@ -1,0 +1,74 @@
+# Dependencies and package-manager output
+node_modules/
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+.pnpm-debug.log*
+
+# Expo / Metro / web output
+.expo/
+.expo-shared/
+dist/
+web-build/
+expo-env.d.ts
+
+# Local environment files and secrets
+.env
+.env.*
+!.env.example
+*.jks
+*.keystore
+*.p8
+*.p12
+*.key
+*.pem
+*.mobileprovision
+
+# Build artifacts
+*.apk
+*.aab
+*.ipa
+*.dSYM.zip
+coverage/
+*.tsbuildinfo
+
+# Expo prebuild output. Remove these two lines if native projects are
+# intentionally versioned and maintained by hand.
+/android/
+/ios/
+
+# Android generated/build files
+**/android/.gradle/
+**/android/build/
+**/android/app/build/
+**/android/.cxx/
+**/android/local.properties
+**/android/captures/
+*.iml
+
+# iOS generated/build files
+**/ios/Pods/
+**/ios/build/
+**/ios/DerivedData/
+**/ios/*.xcuserstate
+**/ios/xcuserdata/
+**/ios/.swiftpm/
+
+# IDE and editor files
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+.cache/

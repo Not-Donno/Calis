@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "Calis",
+    "slug": "calis",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "calis",
+    "userInterfaceStyle": "dark",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.calis.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Calis uses your camera to estimate exercise form on your device. Camera frames never leave your phone.",
+        "NSPhotoLibraryUsageDescription": "Calis can import a backup file you choose."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0B0D10"
+      },
+      "package": "com.calis.app",
+      "allowBackup": false,
+      "permissions": ["android.permission.CAMERA"]
+    },
+    "plugins": [
+      "expo-router",
+      "react-native-vision-camera",
+      [
+        "./plugins/withCalisPose",
+        {
+          "numHands": 1,
+          "minDetectionConfidence": 0.5,
+          "minPresenceConfidence": 0.5,
+          "minTrackingConfidence": 0.5,
+          "enablePose": true,
+          "enableFace": false
+        }
+      ],
+      ["expo-file-system", { "enableFileSharing": true, "supportsOpeningDocumentsInPlace": true }],
+      "expo-sqlite"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
